@@ -15,7 +15,8 @@ Q-1 | Print any name Diagonally and Reverse Diagonally?
         spaces += 2
 
 
-    ![](images/diagonal_output.png)
+
+![](images/diagonal_output.png)
 
     
     # Similarly this time I've taken lenght of entire string and multiplied by 2 and starting displaying character from end and subtracting -2 each character.
@@ -26,8 +27,7 @@ Q-1 | Print any name Diagonally and Reverse Diagonally?
         print(' ' * spaces + s)
         spaces -= 2
 
-
-    ![](images/reverse_diagonal.png)
+![](images/reverse_diagonal.png)
 
 
 
@@ -41,12 +41,12 @@ Q-2 | Create a program to take as input 5 student records in the following forma
         (Optional) validate the user input, i.e marks aren't greater 100 and other such validations you think there might be
 
 
-        ![](images/dict1.png)
-        ![](images/dict2.png)
+   ![](images/dict1.png)
+   ![](images/dict2.png)
 
 
 
 
 Q-3 | Any Song lyrics after 1 Second.
 
-    ![](images/song.png)
+  ![](images/song.png)
