@@ -1,0 +1,71 @@
+{
+    "name": "Ross Park Primary School",
+    "notes": null,
+    "physicalAddress": {
+        "description": "7 Winnecke Ave",
+        "state": "NT",
+        "postCode": "Alice Springs, 0870",
+        "displayAddress": "7 Winnecke Ave, Alice Springs, 0870, NT"
+    },
+    "postalAddress": {
+        "description": "PO Box 364",
+        "state": "NT",
+        "postCode": "ALICE SPRINGS, 0871",
+        "displayAddress": "PO Box 364, ALICE SPRINGS, 0871, NT"
+    },
+    "dn": "ou=Ross Park Primary School,ou=Government,ou=NTSchools,ou=DEET,dc=nt,dc=gov,c=au",
+    "aliases": [],
+    "region": "Central",
+    "ntgGeographicDefinition": "Remote",
+    "enrolment": "487",
+    "enrolmentDataSource": "2019 Census - 1st week August",
+    "description": "not available",
+    "religion": "Government",
+    "hasImage": true,
+    "preSchool": true,
+    "faftSchool": false,
+    "primarySchool": true,
+    "middleSchool": false,
+    "seniorSchool": false,
+    "telephoneNumber": "(08) 895 52000",
+    "businessCategories": [
+        "Primary School"
+    ],
+    "ntgGazettedRegion": null,
+    "directorate": "Central Australia",
+    "schoolElectorate": "Braitling",
+    "facsimileTelephoneNumber": "(08) 8952 6524",
+    "councilMail": "tba",
+    "remoteDefinition": "Urban",
+    "long": "133.8919",
+    "lat": "-23.6936",
+    "uri": "http://www.rossparkprimary.nt.edu.au",
+    "mail": "rosspark.school@ntschools.net",
+    "preSchoolInfo": {
+        "schoolName": "Rona Glynn Pre School",
+        "physicalAddress": {
+            "description": "2 Mckay St",
+            "state": "Alice Springs",
+            "postCode": null,
+            "displayAddress": "2 Mckay St, , Alice Springs"
+        },
+        "telephoneNumber": "(08) 895 21792",
+        "facsimileTelephoneNumber": "(08) 8952 6524"
+    },
+    "schoolManagement": [
+        {
+            "firstName": "Naomi",
+            "lastName": "Berriman",
+            "position": "Administration Manager",
+            "email": "naomi.berriman@ntschools.net",
+            "phone": "(08) 895 52000"
+        },
+        {
+            "firstName": "Suzi",
+            "lastName": "Burgess",
+            "position": "Principal",
+            "email": "suzi.burgess@ntschools.net",
+            "phone": "(08) 895 52000"
+        }
+    ]
+}
