@@ -5,13 +5,13 @@
 ### 1. Take as user input a folder path and print all the files in descending order of their respective sizes
 
 
-![](images/1a.png)
-![](images/1b.png)
+![](images/1a.PNG)
+![](images/1b.PNG)
 
 #### I've also done the optional part where you can remove any file from any directory
 
-![](images/1c.png)
-![](images/1e.png)
+![](images/1c.PNG)
+![](images/1e.PNG)
 
     
 
@@ -22,7 +22,7 @@
 
 ### 3. Build a school scraper that'll scrap 50 schools' info and generate a CSV.
 
-![](images/3.png)
+![](images/3.PNG)
 
-![](images/3a.png)
-![](images/3b.png)
+![](images/3a.PNG)
+![](images/3b.PNG)
