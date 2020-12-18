@@ -17,6 +17,8 @@
 
 ### 2. Build a Facebook bot that will retrieve the number of likes a Facebook page. Input Facebook page handles using CSVs
 
+![](images/2.PNG)
+![](images/2b.PNG)
 
 
 

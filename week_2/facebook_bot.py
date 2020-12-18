@@ -27,7 +27,7 @@ class FacebookBot:
         
         for page in self.open_csv_file_to_get_page_names():
             page_handle = self.source+page
-            print(page_handle)
+            print('\n', page_handle)
             sleep(2)
             response = html.fromstring(requests.get(page_handle, headers=self.headers).text.encode('utf-8'))
             likes = int(response.xpath("//span[@id='PagesLikesCountDOMID']/span/text()")[0].replace("\u200f", "").replace(',', ''))
