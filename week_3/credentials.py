@@ -1,2 +1,0 @@
-PHONE = '03242556168'
-PASSWORD = 'HackinGame212'
