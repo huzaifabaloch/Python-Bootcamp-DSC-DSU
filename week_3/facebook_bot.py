@@ -13,42 +13,8 @@ class FacebookBot:
 
         self.driver = webdriver.Chrome(executable_path=self.chrome_driver)
         self.driver.maximize_window()
-
-
-    def comment_by_comment(self):
-
-        # To split the comments by newline so can add one by one in the comment box.
-
-        comments = """ My aims and goals after this bootcamp would be to get start doing some freelancing.
-                    I will keep on learning.
-                    The automation is a real game changer.
-                    The instructors and the management are really cooperative.
-                    They taught us alot of things that can be done using python.
-                    I learnt basics of python.
-                    I learnt file handling.
-                    I learnt web scraping.
-                    I learnt web automation.
-                    I will learn GUI and flask web apps this week.
-                    And I will keep on learning with python.
-                    I don't know what to say next. :D
-                    I've couple of ideas that needs to be automated.
-                    I will try to automate them.
-                    One of them would be.
-                    I will try to automate my home network.
-                    Really tired of adding and removing users.
-                    Should be a quick way.
-                    Tarun Sir you are great :)
-                    Bahawal Sir you too :)
-                    Thank you for teaching the great stuff for free 
-                    And continue teaching
-                    let us know the beauty of python what we can do with it 
-                    Thank you so much :) """
-
-        comments = [ comment.strip() for comment in comments.split('\n')]
-
-        return comments
-        
-    
+   
+    # TASK - 01    
     def hit_link_and_login(self):
 
         self.driver.get(self.post_url)
@@ -66,7 +32,6 @@ class FacebookBot:
         # Xpath for login button with click event
         self.driver.find_element_by_xpath("//button[@name='login']").click()
         self.driver.implicitly_wait(10)
-        self.like_and_share()
     
     
     def like_and_share(self):
@@ -89,8 +54,43 @@ class FacebookBot:
         # Click the post button.
         self.driver.find_element_by_xpath("//button[@id='share_submit']").click()
         print("\n\n\tFINISHED LIKING AND SHARING THE POST")
-    
 
+
+    
+    # TASK - 02 - OPTIONAL
+    def comment_by_comment(self):
+
+        # To split the comments by newline so can add one by one in the comment box.
+
+        comments = """ My aims and goals after this bootcamp would be to get start doing some freelancing.
+                    I will keep on learning.
+                    The automation is a real game changer.
+                    The instructors and the management are really cooperative.
+                    They taught us alot of things that can be done using python.
+                    I learnt basics of python.
+                    I learnt file handling.
+                    I learnt web scraping.
+                    I learnt web automation.
+                    I will learn GUI and flask web apps this week.
+                    And I will keep on learning with python.
+                    I don't know what to say next. :D
+                    I've couple of ideas that need to be automated.
+                    I will try to automate them.
+                    One of them would be.
+                    I will try to automate my home network.
+                    Really tired of adding and removing users.
+                    Should be a quick way.
+                    Tarun Sir you are great :)
+                    Bahawal Sir you too :)
+                    Thank you for teaching the great stuff for free 
+                    And continue teaching
+                    let us know the beauty of python what we can do with it 
+                    Thank you so much :) """
+
+        comments = [ comment.strip() for comment in comments.split('\n')]
+
+        return comments
+        
     # OPTIONAL - TO ADD COMMENTS IB SUCCESSION ON THE PAGE
     def comments_on_original_post(self):
 
@@ -99,7 +99,7 @@ class FacebookBot:
         self.hit_link_and_login()
         self.driver.implicitly_wait(10)
 
-        for comment in comments[:2]:
+        for comment in comments:
 
             # Click on comment box to focus 
             comment_box = self.driver.find_element_by_xpath("//textarea[@class='_uwx mentions-input']")
@@ -110,7 +110,7 @@ class FacebookBot:
             post_button = self.driver.find_element_by_xpath("//button[@class='_54k8 _52jg _56bs _26vk _3lmf _3fyi _56bv _653w']")
             self.driver.execute_script("arguments[0].click();", post_button)
 
-            time.sleep(5)
+            time.sleep(2)
         
         print("\n\n\tFINISHED COMMENTING ON THE POST")
 
@@ -121,9 +121,10 @@ post_url = 'https://m.facebook.com/DeveloperStudentClubDHASuffaUniversity/posts/
 
 bot = FacebookBot(post_url)
 
-# TASK 01
+#TASK 01
 bot.hit_link_and_login()
+bot.like_and_share()
 
 # TASK 02 
-#bot.comments_on_original_post()
+bot.comments_on_original_post()
 
